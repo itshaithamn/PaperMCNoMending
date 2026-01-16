@@ -198,7 +198,7 @@ public class PaperConfigurations extends Configurations<GlobalConfiguration, Wor
     }
 
     private static ObjectMapper.Factory.Builder defaultGlobalFactoryBuilder(ObjectMapper.Factory.Builder builder) {
-        return builder.addDiscoverer(InnerClassFieldDiscoverer.globalConfig(defaultFieldProcessors()));
+        return builder.addDiscoverer(InnerClassFieldDiscoverer.globalConfig((java.util.List) defaultFieldProcessors()));
     }
 
     @Override
